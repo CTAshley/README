@@ -2,7 +2,7 @@
 int main() {
 	char Operator;
 	float num1, num2, result = 0;
-	printf("\n Welcome to the GCU Calulator +,-/ :");
+	printf("\n Welcome to the GCU Calulator +,-/* :");
 	scanf_s("%c", &Operator, 1);
 	printf("Enter the any number in the calculator num1 and num2 \n :");
 	scanf_s("%f%f", &num1, &num2);
@@ -12,6 +12,8 @@ int main() {
 	case '-': result = num1 - num2;
 		break;
 	case '/': result = num1 / num2;
+		break;
+	case '*': result = num1 + num2;
 		break;
 	default: printf("\n Invalid Operator");
 }
